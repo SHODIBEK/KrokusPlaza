@@ -1,0 +1,280 @@
+.home {
+    display: inline-block;
+    width: 11px;
+    height: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../images/icons/home.svg');
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-image: url('../images/icons/home2.svg');
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.icon01 {
+    width: 9px;
+    height: 14px;
+    background: url('../images/icons/icon01.svg') no-repeat;
+    transition: all 0.3s ease-in-out;
+}
+
+.icon02 {
+    width: 10px;
+    height: 14px;
+    background: url('../images/icons/icon02.svg') no-repeat;
+}
+
+.icon03 {
+    width: 13px;
+    height: 14px;
+    background: url('../images/icons/icon03.svg') no-repeat;
+}
+
+.icon04 {
+    width: 8px;
+    height: 14px;
+    background: url('../images/icons/icon04.svg') no-repeat;
+}
+
+.icon05 {
+    width: 15px;
+    height: 14px;
+    background: url('../images/icons/icon05.svg') no-repeat;
+}
+
+.icon06 {
+    width: 50px;
+    height: 50px;
+    background: url('../images/icons/icon06.svg') no-repeat;
+}
+
+.icon07 {
+    width: 40px;
+    height: 50px;
+    background: url('../images/icons/icon07.svg') no-repeat;
+}
+
+.icon08 {
+    width: 50px;
+    height: 50px;
+    background: url('../images/icons/icon08.png') no-repeat;
+}
+
+.icon09 {
+    width: 20px;
+    height: 20px;
+    background: url('../images/icons/icon09.svg') no-repeat;
+}
+
+.item0 {
+    .icon {
+        background: url('../images/icons/item0.svg') no-repeat center;
+    }
+    &:hover {
+        .icon {
+            background: url('../images/icons/item0-2.svg') no-repeat center;
+        }
+    }
+}
+
+.item1 {
+    .icon {
+        background: url('../images/icons/item01.svg') no-repeat center center;
+    }
+    &:hover {
+        .icon {
+            background: url('../images/icons/item01-2.svg') no-repeat center center;
+        }
+    }
+}
+
+.item2 {
+    .icon {
+        background: url('../images/icons/item02.svg') no-repeat center center;
+    }
+    &:hover {
+        .icon {
+            background: url('../images/icons/item02-2.svg') no-repeat center center;
+        }
+    }
+}
+
+.item3 {
+    .icon {
+        background: url('../images/icons/item03.svg') no-repeat center;
+    }
+    &:hover {
+        .icon {
+            background: url('../images/icons/item03-2.svg') no-repeat center;
+        }
+    }
+}
+
+.item4 {
+    .icon {
+        background: url('../images/icons/item04.svg') no-repeat center;
+    }
+    &:hover {
+        .icon {
+            background: url('../images/icons/item04-2.svg') no-repeat center;
+        }
+    }
+}
+
+.item5 {
+    .icon {
+        background: url('../images/icons/item05.svg') no-repeat center;
+    }
+    &:hover {
+        .icon {
+            background: url('../images/icons/item05-2.svg') no-repeat center;
+        }
+    }
+}
+
+.item6 {
+    .icon {
+        background: url('../images/icons/item06.svg') no-repeat center;
+    }
+    &:hover {
+        .icon {
+            background: url('../images/icons/item06-2.svg') no-repeat center;
+        }
+    }
+}
+
+.item7 {
+    .icon {
+        background: url('../images/icons/item07.svg') no-repeat center;
+    }
+    &:hover {
+        .icon {
+            background: url('../images/icons/item07-2.svg') no-repeat center;
+        }
+    }
+}
+
+.item8 {
+    .icon {
+        background: url('../images/icons/item08.svg') no-repeat center;
+    }
+    &:hover {
+        .icon {
+            background: url('../images/icons/item08-2.svg') no-repeat center;
+        }
+    }
+}
+
+.item9 {
+    .icon {
+        background: url('../images/icons/item09.svg') no-repeat center;
+    }
+    &:hover {
+        .icon {
+            background: url('../images/icons/item09-2.svg') no-repeat center;
+        }
+    }
+}
+
+.item10 {
+    .icon {
+        background: url('../images/icons/item10.svg') no-repeat center;
+    }
+    &:hover {
+        .icon {
+            background: url('../images/icons/item10-2.svg') no-repeat center;
+        }
+    }
+}
+
+.item11 {
+    .icon {
+        background: url('../images/icons/item11.svg') no-repeat center;
+    }
+    &:hover {
+        .icon {
+            background: url('../images/icons/item11-2.svg') no-repeat center;
+        }
+    }
+}
+
+.item12 {
+    .icon {
+        background: url('../images/icons/item12.svg') no-repeat center;
+    }
+    &:hover {
+        .icon {
+            background: url('../images/icons/item12-2.svg') no-repeat center;
+        }
+    }
+}
+
+.item13 {
+    .icon {
+        background: url('../images/icons/item13.svg') no-repeat center;
+    }
+    &:hover {
+        .icon {
+            background: url('../images/icons/item13-2.svg') no-repeat center;
+        }
+    }
+}
+
+.item14 {
+    .icon {
+        background: url('../images/icons/item14.svg') no-repeat center;
+    }
+    &:hover {
+        .icon {
+            background: url('../images/icons/item14-2.svg') no-repeat center;
+        }
+    }
+}
+
+.item15 {
+    .icon {
+        background: url('../images/icons/item15.svg') no-repeat center;
+    }
+    &:hover {
+        .icon {
+            background: url('../images/icons/item15-2.svg') no-repeat center;
+        }
+    }
+}
+
+.item16 {
+    .icon {
+        background: url('../images/icons/item16.svg') no-repeat center;
+    }
+    &:hover {
+        .icon {
+            background: url('../images/icons/item16-2.svg') no-repeat center;
+        }
+    }
+}
+
+.item17 {
+    .icon {
+        background: url('../images/icons/item17.svg') no-repeat center;
+    }
+    &:hover {
+        .icon {
+            background: url('../images/icons/item17-2.svg') no-repeat center;
+        }
+    }
+}
+
+.fb {
+    display: inline-block;
+    width: 34px;
+    height: 32px;
+    background: url('../images/icons/fb.svg') no-repeat center;
+}
+
+.inst {
+    display: inline-block;
+    width: 34px;
+    height: 32px;
+    background: url('../images/icons/ins.svg') no-repeat center;
+}

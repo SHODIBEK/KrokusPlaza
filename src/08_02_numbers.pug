@@ -1,0 +1,164 @@
+extends pug/base
+
+append vars
+    - title = 'Cтудия'
+    - meta.description = 'Описание страницы'
+    - meta.viewport = 'width=device-width, initial-scale=1'
+    - link.icon = './favicon.ico'
+    - meta.formatDetection = 'telephone=no'
+    - meta.themeColor = '#17a8e5'
+    - defaultLink = 'javascript:void(0);'
+    - body.classList = ['inner-page'];
+block content
+    .content
+        include pages/fixed-header
+        include pages/inner-header
+        .wrapper
+            .container
+                .navigation
+                    .navigation-title
+                        h1 Cтудия
+                    <ul class="crumbs">
+                        <li>
+                            <a href="/" class="nav-home"></a>
+                        </li>
+                        <li>
+                            <a href="#">Номера и цены</a>
+                        </li>
+                        <li>
+                            <a href="#">Cтудия</a>
+                        </li>
+                    </ul>
+                .room
+                    .room-inner
+                        .room-inner__block
+                            .room-inner__slider.owl-carousel
+                                a(href="images/content/5.jpg" data-fancybox="gallery")
+                                    img(src="images/content/5.jpg", alt="")
+                                a(href="images/content/6.jpg" data-fancybox="gallery")
+                                    img(src="images/content/6.jpg", alt="")
+                                a(href="images/content/7.jpg" data-fancybox="gallery")
+                                    img(src="images/content/7.jpg", alt="")
+                            .room-inner__info
+                                p.price от <span>700 000</span> uzs
+                                p.rate Курс валюты: <span>1 USD = <b>8181.08</b> UZS</span>
+                                .comfort
+                                    p Удобства:
+                                    .rooms__option
+                                        ul.icon-bar
+                                            li(data-tolltip="Wi-Fi").item0
+                                                i.icon
+                                            li(data-tolltip="TV").item1
+                                                i.icon
+                                            li(data-tolltip="Минибар").item2
+                                                i.icon
+                                            li(data-tolltip="Телефон").item3
+                                                i.icon
+                                            li(data-tolltip="Фен").item4
+                                                i.icon
+                                            li(data-tolltip="Замок").item6
+                                                i.icon
+                                            li(data-tolltip="Кондиционер").item7
+                                                i.icon
+                                            li(data-tolltip="Кровать").item5
+                                                i.icon
+                                            li(data-tolltip="Диван").item8
+                                                i.icon
+                                            li(data-tolltip="Душ").item9
+                                                i.icon
+                                .room-inner__link
+                                    a(href="#").btn.btn-small
+                                        span Забронировать номер
+                        .default-page  
+                            p Эта страница является самой первой и главной точкой посетителя сайта, и, поэтому важно заполнить ее наиболее качественной и интересной информацией, ведь именно прочитав ее, посетитель решит – оставаться на сайте или искать необходимую информацию в другом месте. Наполняя этот блок информацией, необходимо отталкиваться от потенциальных покупателей, их желаний и потребностей. Расскажите вкратце об истории и деятельности Вашей компании, укажите ваши плюсы и отличия от конкурентов ... 
+                        .back-link
+                            a(href="#").btn.btn-small
+                                span Назад
+                        .room-other
+                            h4 Другие номера
+                            .rooms-items.owl-carousel
+                                a(href="#").rooms-item
+                                    .rooms-item__img(style="background-image: url(images/content/5.jpg)")
+                                    .rooms-info
+                                        .rooms__title
+                                            | Стандарт
+                                        .rooms__desc
+                                            i 
+                                                | Уютные номера «Стандарт» площадью от 44 до 54 м² с просторным гардеробом и спальней расположены на мансардном этаже, обеспечивают комфортный отдых в уединенной обстановке.
+                                        .rooms__option
+                                            ul.icon-bar
+                                                li(data-tolltip="Wi-Fi").item0
+                                                    i.icon
+                                                li(data-tolltip="TV").item1
+                                                    i.icon
+                                                li(data-tolltip="Минибар").item2
+                                                    i.icon
+                                                li(data-tolltip="Телефон").item3
+                                                    i.icon
+                                                li(data-tolltip="Фен").item4
+                                                    i.icon
+                                                li(data-tolltip="Кровать").item5
+                                                    i.icon
+                                        .rooms__price
+                                            | От <span>450 000</span> uzs
+                                a(href="#").rooms-item
+                                    .rooms-item__img(style="background-image: url(images/content/6.jpg)")
+                                    .rooms-info
+                                        .rooms__title
+                                            | Делюск
+                                        .rooms__desc
+                                            i 
+                                                | Просторные и светлые номера «Делюкс» площадью от 51 до 64 м2 с видом на парк, функционально поделены на две части: спальную зону с широкой кроватью и гостиную зону с комфортабельным диваном. 
+                                        .rooms__option
+                                            ul.icon-bar
+                                                li(data-tolltip="Wi-Fi").item0
+                                                    i.icon
+                                                li(data-tolltip="TV").item1
+                                                    i.icon
+                                                li(data-tolltip="Минибар").item2
+                                                    i.icon
+                                                li(data-tolltip="Телефон").item3
+                                                    i.icon
+                                                li(data-tolltip="Фен").item4
+                                                    i.icon
+                                                li(data-tolltip="Замок").item6
+                                                    i.icon
+                                                li(data-tolltip="Кондиционер").item7
+                                                    i.icon
+                                                li(data-tolltip="Кровать").item5
+                                                    i.icon
+                                        .rooms__price
+                                            | От <span>550 000</span> uzs
+                                a(href="#").rooms-item
+                                    .rooms-item__img(style="background-image: url(images/content/5.jpg)")
+                                    .rooms-info
+                                        .rooms__title
+                                            | Студия
+                                        .rooms__desc
+                                            i 
+                                                | Великолепные номера «Студия» площадью от 90 до 120 м² с просторной гостиной и открытой террасой идеально подходят для комфортного пребывания деловых путешественников, а также семейного
+                                        .rooms__option
+                                            ul.icon-bar
+                                                li(data-tolltip="Wi-Fi").item0
+                                                    i.icon
+                                                li(data-tolltip="TV").item1
+                                                    i.icon
+                                                li(data-tolltip="Минибар").item2
+                                                    i.icon
+                                                li(data-tolltip="Телефон").item3
+                                                    i.icon
+                                                li(data-tolltip="Фен").item4
+                                                    i.icon
+                                                li(data-tolltip="Замок").item6
+                                                    i.icon
+                                                li(data-tolltip="Кондиционер").item7
+                                                    i.icon
+                                                li(data-tolltip="Кровать").item5
+                                                    i.icon
+                                                li(data-tolltip="Диван").item8
+                                                    i.icon
+                                                li(data-tolltip="Душ").item9
+                                                    i.icon
+                                        .rooms__price
+                                            | От <span>700 000</span> uzs
+        include pages/footer

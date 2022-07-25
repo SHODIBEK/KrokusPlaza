@@ -1,0 +1,73 @@
+extends pug/base
+
+append vars
+    - title = 'Контакты'
+    - meta.description = 'Описание страницы'
+    - meta.viewport = 'width=device-width, initial-scale=1'
+    - link.icon = './favicon.ico'
+    - meta.formatDetection = 'telephone=no'
+    - meta.themeColor = '#17a8e5'
+    - defaultLink = 'javascript:void(0);'
+    - body.classList = ['inner-page'];
+block content
+    .content
+        include pages/fixed-header
+        include pages/inner-header
+        .wrapper
+            .container
+                .navigation
+                    .navigation-title
+                        h1 Контакты
+                    <ul class="crumbs">
+                        <li>
+                            <a href="/" class="nav-home"></a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                .contact
+                    .contact-map
+                        .contact-map__position
+                            img(src="images/content/map.jpg", alt="")
+                    .contact-items
+                        .contact-item
+                            h5 Телефоны:
+                            p +998 71 123-45-67
+                            p +998 71 123-45-67
+                        .contact-item
+                            h5 Адресс:
+                            p Узбекистан, г. Ташкент, название улицы, номер строения
+                        .contact-item
+                            h5 Электронная почта:
+                            p info@domen.uz
+                    .contact-form
+                        h4 Если у Вас есть вопросы, вы можете обратиться к нам:
+                        form(action="/" method="/")
+                            .contact-form__block
+                                .form-group.input-group
+                                    input(type="text" name="name" id="name")
+                                    label(for="name") Представьтесь пожалуйста
+                                .form-group.input-group
+                                    input(type="mail" name="mail" id="mail")
+                                    label(for="mail") Электронная почта
+                                .form-group.text-group
+                                    textarea(id="text")
+                                    label(for="text") Напишите отзыв...
+                            .contact-form__captcha
+                                span.alert Все поля обязательны для заполнения
+                                <div class="visualCaptcha" id="simple-captcha">
+                                    <div class="visualCaptcha-possibilities">
+                                            <div class="img"><a href="javascript:void(0);"><img src="images/icons/shirt2.png" alt=""></a></div>
+                                            <div class="img"><a href="javascript:void(0);"><img src="images/icons/headphone2.png" alt=""></a></div>
+                                            <div class="img visualCaptcha-selected"><a href="javascript:void(0);"><img src="images/icons/auto.png" alt=""></a></div>
+                                            <div class="img"><a href="javascript:void(0);"><img src="images/icons/buggy2.png" alt=""></a></div>
+                                            <div class="img"><a href="javascript:void(0);"><img src="images/icons/coffee2.png" alt=""></a></div>
+                                            <div class="img"><a href="javascript:void(0);"><img src="images/icons/airplain2.png" alt=""></a></div>
+                                    </div>
+                                    <div class="visualCaptcha-explanation">Выберите&nbsp;<span class="active">“автомобиль”</span>, чтобы подтвердить, что&nbsp;Вы не&nbsp;робот</div>
+                                </div>
+                            .submit
+                                button(type="submit").btn.btn-small
+                                    span Отправить
+        include pages/footer

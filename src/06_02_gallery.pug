@@ -1,0 +1,43 @@
+extends pug/base
+
+append vars
+    - title = 'Название категории'
+    - meta.description = 'Описание страницы'
+    - meta.viewport = 'width=device-width, initial-scale=1'
+    - link.icon = './favicon.ico'
+    - meta.formatDetection = 'telephone=no'
+    - meta.themeColor = '#17a8e5'
+    - defaultLink = 'javascript:void(0);'
+    - body.classList = ['inner-page'];
+block content
+    .content
+        include pages/fixed-header
+        include pages/inner-header
+        .wrapper
+            .container
+                .navigation
+                    .navigation-title
+                        h1 Название категории
+                    <ul class="crumbs">
+                        <li>
+                            <a href="/" class="nav-home"></a>
+                        </li>
+                        <li>
+                            <a href="#">Галерея</a>
+                        </li>
+                        <li>
+                            <a href="#">Название категории</a>
+                        </li>
+                    </ul>
+                .gallery
+                    .default-page
+                        p   Эта страница является самой первой и главной точкой посетителя сайта, и, поэтому важно заполнить ее наиболее качественной и интересной информацией, ведь именно прочитав ее, посетитель решит – оставаться на сайте или искать необходимую информацию в другом месте. Наполняя этот блок информацией, необходимо отталкиваться от потенциальных покупателей, их желаний и потребностей. Расскажите вкратце об истории и деятельности Вашей компании, укажите ваши плюсы и отличия от конкурентов ... 
+                    .gallery-inner
+                        .gallery-inner__items
+                            - for(var i = 0; i < 12; i++)
+                                a(href="images/content/7.jpg" data-fancybox="gallery").gallery-inner__item
+                                    img(src="images/content/7.jpg", alt="")
+                    .back-link
+                        a(href="#").btn.btn-small
+                            span Назад
+        include pages/footer

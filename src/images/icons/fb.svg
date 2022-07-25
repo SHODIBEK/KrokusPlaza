@@ -1,0 +1,16 @@
+<svg id="Группа_1" data-name="Группа 1" xmlns="http://www.w3.org/2000/svg" width="34" height="32" viewBox="0 0 34 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #4e5d75;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="Rounded_Rectangle_20_copy" data-name="Rounded Rectangle 20 copy" class="cls-1" width="34" height="32" rx="5" ry="5"/>
+  <path id="Forma_1_copy" data-name="Forma 1 copy" class="cls-2" d="M238.459,4479.48v2.48H237v5.28h1.459V4494h5.247v-6.76h2.011s0.188-3.7.279-5.29h-2.279v-2.07a0.8,0.8,0,0,1,.65-0.73H246V4476h-4.471C238.384,4476,238.459,4479.03,238.459,4479.48Z" transform="translate(-224 -4469)"/>
+</svg>

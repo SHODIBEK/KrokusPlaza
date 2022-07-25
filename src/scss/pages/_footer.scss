@@ -1,0 +1,281 @@
+footer {
+    position: relative;
+    padding-top: 128px;
+    background: rgba(76,93,123,1);
+    background: -moz-linear-gradient(top, rgba(76,93,123,1) 0%, rgba(82,92,106,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(76,93,123,1)), color-stop(100%, rgba(82,92,106,1)));
+    background: -webkit-linear-gradient(top, rgba(76,93,123,1) 0%, rgba(82,92,106,1) 100%);
+    background: -o-linear-gradient(top, rgba(76,93,123,1) 0%, rgba(82,92,106,1) 100%);
+    background: -ms-linear-gradient(top, rgba(76,93,123,1) 0%, rgba(82,92,106,1) 100%);
+    background: linear-gradient(to bottom, rgba(76,93,123,1) 0%, rgba(82,92,106,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c5d7b', endColorstr='#525c6a', GradientType=0 );
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 117px;
+        background: url('../images/icons/footerline.png') repeat-x;
+    }
+}
+
+.footer {
+    &-top {
+        display: flex;
+        width: 100%;
+
+        @include desktop {
+            flex-direction: column;
+        }
+    }
+
+    &-left {
+        width: 50%;
+
+        @include desktop {
+            width: 100%;
+        }
+    }
+
+    &-left {
+        
+        &__top {
+            display: flex;
+            margin-bottom: 34px;
+
+            @include desktop {
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            ul {
+                width: 120px;
+                margin-right: 7px;
+
+                @include desktop {
+                    margin-bottom: 20px;
+                }
+
+                &:nth-child(2) {
+                    margin-right: 13px;
+                }
+
+                &:nth-child(3) {
+                    width: 210px;
+
+                    @include desktop {
+                        width: unset;
+                    }
+                }
+                
+                @include desktop {
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            .footer-title {
+                font-weight: 400;
+                margin-bottom: 7px;
+                font-size: 11px;
+                line-height: 21px;
+                color: #9aa2b4;
+                text-transform: none;
+            }
+        }
+
+        li {
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 21px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        
+
+        &__bottom {
+            display: flex;
+
+            @include desktop {
+                flex-direction: column;
+            }
+
+            ul {
+                width: 100px;
+                margin-right: 8px;
+
+                @include desktop {
+                   width: unset;
+                   margin-bottom: 20px;
+                   margin-right: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .social {
+            .footer-title {
+                margin-bottom: 13px;
+            }
+
+            li:nth-child(n+2) {
+                display: inline-block;
+                margin-right: 7px;
+            }
+
+            li {
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .recoment {
+            width: 350px;
+
+            @include desktop {
+                width: unset;
+            }
+
+            .footer-title {
+                margin-bottom: 13px;
+            }
+
+            li:nth-child(n+2) {
+                display: inline-block;
+                margin-right: 7px;
+            }
+            li {
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    
+    &-title {
+        font-weight: 400;
+        margin-bottom: 7px;
+        font-size: 11px;
+        line-height: 21px;
+        color: #9aa2b4;
+        text-transform: none;
+    }
+    &-right {
+        width: 50%;
+        margin-left: 98px;
+
+        @include desktop {
+            margin-left: 0;
+            width: 100%;
+        }
+    }
+
+    &-rate {
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 12px;
+
+        &__item {
+            width: 32%;
+            text-align: center;
+            margin-right: 9px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &__top {
+            position: relative;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #738196;
+
+            @include desktop {
+                min-height: 81px;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: #475367;
+            }
+        }
+        .rate {
+            display: block;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 19px;
+            text-transform: uppercase;
+            color: #fff;
+
+            &_name {
+                display: block;
+                font-size: 13px;
+                line-height: 23px;
+                color: #9aa2b4;
+            }
+        }
+
+        .value {
+            font-weight: 600;
+            font-size: 13px;
+            color: #fff;
+        }
+
+        &__bottom {
+            margin-top: 15px;
+        }
+
+        &__link {
+            a {
+                font-weight: 100;
+                font-size: 11px;
+                color: #fff;
+                text-transform: uppercase;
+                text-decoration: none;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: $sky;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 30px 0 50px 0;
+
+        @include desktop {
+            flex-direction: column;
+        }
+
+        p {
+            font-size: 11px;
+            color: #9aa2b4;
+            text-transform: uppercase;
+        }
+
+        .korden {
+            display: inline-block;
+            margin-top: 12px;
+        }
+    }
+}

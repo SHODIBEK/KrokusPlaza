@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39" height="49" viewBox="0 0 39 49">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f9a638;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="701" y="1574" width="39" height="49" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="2" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2"/>
+      <feFlood result="flood" flood-color="#363d46"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+      <feImage preserveAspectRatio="none" x="704" y="1575" width="32" height="42" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzIiIGhlaWdodD0iNDIiIHZpZXdCb3g9IjAgMCAzMiA0MiI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSIxNiIgeTE9IjQyIiB4Mj0iMTYiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjEyNSIgc3RvcC1jb2xvcj0iI2U1Y2E3MSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuODc1IiBzdG9wLWNvbG9yPSIjOTg2YTFjIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSIzMiIgaGVpZ2h0PSI0MiIvPgo8L3N2Zz4K"/>
+      <feComposite result="composite-2" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend-2" in2="blend"/>
+    </filter>
+  </defs>
+  <path id="Forma_1" data-name="Forma 1" class="cls-1" d="M720,1579.92A11.075,11.075,0,1,0,731.077,1591,11.091,11.091,0,0,0,720,1579.92Zm0,19.69a8.615,8.615,0,1,1,8.615-8.61A8.627,8.627,0,0,1,720,1599.61Zm0-24.61a16.02,16.02,0,0,0-16,16,15.839,15.839,0,0,0,3.187,9.57l11.824,15.93a1.227,1.227,0,0,0,1.977,0l11.821-15.93A15.817,15.817,0,0,0,736,1591,16.02,16.02,0,0,0,720,1575Zm10.836,24.1L720,1613.7l-10.839-14.6A13.54,13.54,0,1,1,730.836,1599.1Z" transform="translate(-701 -1574)"/>
+</svg>

@@ -1,0 +1,147 @@
+extends pug/base
+
+append vars
+    - title = 'Отзывы'
+    - meta.description = 'Описание страницы'
+    - meta.viewport = 'width=device-width, initial-scale=1'
+    - link.icon = './favicon.ico'
+    - meta.formatDetection = 'telephone=no'
+    - meta.themeColor = '#17a8e5'
+    - defaultLink = 'javascript:void(0);'
+    - body.classList = ['inner-page'];
+block content
+    .content
+        include pages/fixed-header
+        include pages/inner-header
+        .wrapper
+            .container
+                .navigation
+                    .navigation-title
+                        h1 Отзывы
+                    <ul class="crumbs">
+                        <li>
+                            <a href="/" class="nav-home"></a>
+                        </li>
+                        <li>
+                            <a href="#">Отзывы</a>
+                        </li>
+                    </ul>
+                .reviews-inner
+                    .reviews-inner__items
+                        .reviews-inner__item
+                            .reviews-inner__img(style="background-image: url('images/content/17.jpg')")
+                            .reviews-inner__block
+                                h4  Алексей лазарев
+                                p
+                                    | Люди склонны читать отзывы, даже если они не читают основной текст. Разумеется, если эти отзывы. Когда Вы отзываетесь лестно о чьей-то работе, товаре, явлении и т.д., Вы располагаете
+                                .collapse
+                                    a(href="javascript:void(0);" data-text="Свернуть...")
+                                        | подробнее...
+                        .reviews-inner__item
+                            .reviews-inner__img(style="background-image: url('images/content/17.jpg')")
+                            .reviews-inner__block
+                                h4  Алексей лазарев
+                                p
+                                    | Люди склонны читать отзывы, даже если они не читают основной текст. Разумеется, если эти отзывы им интересны. Когда Вы отзываетесь лестно о чьей-то работе, товаре, явлении и т.д., Вы располагаете ... себе ... единомышленников и людей, вовлеченных в то, о чем Вы пишете. Люди склонны читать отзывы, даже если они не читают основной текст. Разумеется, если эти отзывы им интересны. Когда Вы отзываетесь лестно о чьей-то работе, товаре, явлении и т.д.,
+                                .collapse
+                                    a(href="javascript:void(0);" data-text="Свернуть...")
+                                        | подробнее...
+                        .reviews-inner__item
+                            .reviews-inner__img(style="background-image: url('images/content/17.jpg')")
+                            .reviews-inner__block
+                                h4  Алексей лазарев
+                                p
+                                    | Люди склонны читать отзывы, даже если они не читают основной текст. Разумеется, если эти отзывы им интересны. Когда Вы отзываетесь лестно о чьей-то работе, товаре, явлении и т.д., Вы располагаете ... себе ... единомышленников и людей, вовлеченных в то, о чем Вы пишете. Текст необходимо составлять живой, чтобы посетитель читал его быстрvо и легко, заинтересовываясь с каждой строчкой. Не стоит перегружать текст специальными терминами или писать объемный материал.отдыха или неспешного отдыха. Люди склонны читать отзывы, даже если они не читают основной текст. Разумеется, если эти отзывы им интересны. Когда Вы отзываетесь лестно о чьей-то работе, товаре, явлении и т.д., Вы располагаете ... себе ... единомышленников и людей, вовлеченных в то, о чем Вы пишете. Текст необходимо составлять живой, чтобы посетитель читал его быстрvо и легко, заинтересовываясь с каждой строчкой. Не стоит перегружать текст специальными терминами или писать объемный материал.отдыха или неспешного отдыха.
+                                .collapse
+                                    a(href="javascript:void(0);" data-text="Свернуть...")
+                                        | подробнее...
+                        .reviews-inner__item
+                            .reviews-inner__img(style="background-image: url('images/content/17.jpg')")
+                            .reviews-inner__block
+                                h4  Алексей лазарев
+                                p
+                                    | Люди склонны читать отзывы, даже если они не читают основной текст. Разумеется, если эти отзывы им интересны. Когда Вы отзываетесь лестно о чьей-то работе, товаре, явлении и т.д., Вы располагаете ... себе ... единомышленников и людей, вовлеченных в то, о чем Вы пишете. Текст необходимо составлять живой, чтобы 
+                                .collapse
+                                    a(href="javascript:void(0);" data-text="Свернуть...")
+                                        | подробнее...
+                        .reviews-inner__item
+                            .reviews-inner__img(style="background-image: url('images/content/17.jpg')")
+                            .reviews-inner__block
+                                h4  Алексей лазарев
+                                p
+                                    | Люди склонны читать отзывы, даже если они не читают основной текст. Разумеется, если эти отзывы им интересны. Когда Вы отзываетесь лестно о чьей-то работе, товаре, явлении и т.д., Вы располагаете ... себе ... единомышленников и людей, вовлеченных в то, о чем Вы пишете. Текст необходимо составлять живой...
+                                .collapse
+                                    a(href="javascript:void(0);" data-text="Свернуть...")
+                                        | подробнее...
+                    <ul class="pagination">
+                        <li>
+                            <a href="">Предыдущая</a>
+                        </li>
+                        <li>
+                            <a href="">1</a>
+                        </li>
+                        <li class="active">
+                            <a href="">2</a>
+                        </li>
+                        <li>
+                            <a href="">3</a>
+                        </li>
+                        <li class="dots">
+                            <a href="">....</a>
+                        </li>
+                        <li>
+                            <a href="">10</a>
+                        </li>
+                        <li>
+                            <a href="">Следующая</a>
+                        </li>
+                    </ul>
+                    .reviews-form
+                        h4 Оставить отзыв
+                        p Поделитесь впечатлениями — ваш опыт будет полезен другим путешественникам!
+                        form(action="/" method="/" style="display: none")
+                            .reviews-form__block
+                                .reviews-form__left
+                                    .form-group.input-group
+                                        input(type="text" name="name" id="name")
+                                        label(for="name") Представьтесь пожалуйста
+                                    .form-group.input-group
+                                        input(type="mail" name="mail" id="mail")
+                                        label(for="mail") Электронная почта
+                                    .form-group.text-group
+                                        textarea(id="text")
+                                        label(for="text") Напишите отзыв...
+                                .reviews-form__right
+                                    span.alert Фотография ещё не загружена
+                                    .dwImg
+                                        <label for="myfile" class="label">Загрузить фотографию</label>
+                                        <input type="file" class="my" id="myfile" name="myfile" accept="image/gif, image/jpeg, image/png">
+                                    .format
+                                        span Форматы и максимальный вес:
+                                        ul
+                                            li JPG
+                                            li PNG
+                                            li GIF
+                                            li 2 mb
+                            .reviews-form__captcha
+                                span.alert Все поля обязательны для заполнения
+                                <div class="visualCaptcha" id="simple-captcha">
+                                    <div class="visualCaptcha-possibilities">
+                                            <div class="img"><a href="javascript:void(0);"><img src="images/icons/shirt.png" alt=""></a></div>
+                                            <div class="img"><a href="javascript:void(0);"><img src="images/icons/headphone.png" alt=""></a></div>
+                                            <div class="img visualCaptcha-selected"><a href="javascript:void(0);"><img src="images/icons/auto.png" alt=""></a></div>
+                                            <div class="img"><a href="javascript:void(0);"><img src="images/icons/buggy.png" alt=""></a></div>
+                                            <div class="img"><a href="javascript:void(0);"><img src="images/icons/coffee.png" alt=""></a></div>
+                                            <div class="img"><a href="javascript:void(0);"><img src="images/icons/airplain.png" alt=""></a></div>
+                                    </div>
+                                    <div class="visualCaptcha-explanation">Выберите&nbsp;<span class="active">“автомобиль”</span>, чтобы подтвердить, что&nbsp;Вы не&nbsp;робот</div>
+                                </div>
+                            .submit
+                                button(type="submit").btn.btn-small
+                                    span Отправить
+                        .reviews-form__sucess
+                            span.success Ваш отзыв будет опубликован в ближайшее время.
+                            .reviews-form__link
+                                a(href="#").btn.btn-small
+                                    span Отправить еще раз
+        include pages/footer

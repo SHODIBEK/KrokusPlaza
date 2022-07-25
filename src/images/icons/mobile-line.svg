@@ -1,0 +1,13 @@
+<svg id="line" xmlns="http://www.w3.org/2000/svg" width="16.625" height="14.562" viewBox="0 0 16.625 14.562">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Фигура_1" data-name="Фигура 1" class="cls-1" d="M276.546,928.305v-2.078h16.623v2.078H276.546Z" transform="translate(-276.531 -926.219)"/>
+  <path id="Фигура_1_копия" data-name="Фигура 1 копия" class="cls-1" d="M276.546,934.539v-2.078h16.623v2.078H276.546Z" transform="translate(-276.531 -926.219)"/>
+  <path id="Фигура_1_копия_2" data-name="Фигура 1 копия 2" class="cls-1" d="M276.546,940.773V938.7h16.623v2.078H276.546Z" transform="translate(-276.531 -926.219)"/>
+</svg>

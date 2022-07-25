@@ -1,0 +1,55 @@
+extends pug/base
+
+append vars
+    - title = 'Галерея'
+    - meta.description = 'Описание страницы'
+    - meta.viewport = 'width=device-width, initial-scale=1'
+    - link.icon = './favicon.ico'
+    - meta.formatDetection = 'telephone=no'
+    - meta.themeColor = '#17a8e5'
+    - defaultLink = 'javascript:void(0);'
+    - body.classList = ['inner-page'];
+block content
+    .content
+        include pages/fixed-header
+        include pages/inner-header
+        .wrapper
+            .container
+                .navigation
+                    .navigation-title
+                        h1 Галерея
+                    <ul class="crumbs">
+                        <li>
+                            <a href="/" class="nav-home"></a>
+                        </li>
+                        <li>
+                            <a href="#">Галерея</a>
+                        </li>
+                    </ul>
+                .gallery
+                    .gallery-items
+                        a(href="#").gallery-item
+                            .gallery-item__img(style="background-image: url('images/content/13.jpg')")
+                            .gallery-item__title
+                                p Название категории галереи
+                        a(href="#").gallery-item
+                            .gallery-item__img(style="background-image: url('images/content/13.jpg')")
+                            .gallery-item__title
+                                p Длинное Название категории галереи
+                        a(href="#").gallery-item
+                            .gallery-item__img(style="background-image: url('images/content/13.jpg')")
+                            .gallery-item__title
+                                p Длинное Название категории галереи
+                        a(href="#").gallery-item
+                            .gallery-item__img(style="background-image: url('images/content/13.jpg')")
+                            .gallery-item__title
+                                p Длинное Название категории галереи
+                        a(href="#").gallery-item
+                            .gallery-item__img(style="background-image: url('images/content/13.jpg')")
+                            .gallery-item__title
+                                p Длинное Название категории галереи
+                        a(href="#").gallery-item
+                            .gallery-item__img(style="background-image: url('images/content/13.jpg')")
+                            .gallery-item__title
+                                p Длинное Название категории галереи
+        include pages/footer

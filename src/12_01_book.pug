@@ -1,0 +1,114 @@
+extends pug/base
+
+append vars
+    - title = 'Забронировать номер'
+    - meta.description = 'Описание страницы'
+    - meta.viewport = 'width=device-width, initial-scale=1'
+    - link.icon = './favicon.ico'
+    - meta.formatDetection = 'telephone=no'
+    - meta.themeColor = '#17a8e5'
+    - defaultLink = 'javascript:void(0);'
+    - body.classList = ['inner-page'];
+block content
+    .content
+        include pages/fixed-header
+        include pages/inner-header
+        .wrapper
+            .container
+                .navigation
+                    .navigation-title
+                        h1 Забронировать номер
+                    <ul class="crumbs">
+                        <li>
+                            <a href="/" class="nav-home"></a>
+                        </li>
+                        <li>
+                            <a href="#">Забронировать номер</a>
+                        </li>
+                    </ul>
+                .book
+                    .book-form
+                        form(action="/" method="/")
+                            .book-items
+                                .book-item
+                                    .book-title
+                                        | Тип номера
+                                    .book-group
+                                        .form-group.input-group
+                                            input(type="text" name="chnumber" id="chnumber")
+                                            label(for="chnumber") Выберите номер
+                                .book-item
+                                    .book-title
+                                        | Личные данные
+                                    .book-group
+                                        .form-group.input-group
+                                            input(type="text" name="name" id="name")
+                                            label(for="name") Представьтесь пожалуйста
+                                        .form-group.input-group
+                                            input(type="text" name="cityzen" id="cityzen")
+                                            label(for="cityzen") Гражданство
+                                        .form-group.input-group
+                                            input(type="tel" name="adult" id="adult")
+                                            label(for="adult") Взрослых
+                                        .form-group.input-group
+                                            input(type="tel" name="child" id="child")
+                                            label(for="child") Детей
+                                        .form-group.input-group
+                                            input(type="text" data-field="date" readonly name="arrdate" id="arrdate")
+                                            label(for="arrdate") Дата заезда
+                                        .form-group.input-group
+                                            input( type="text" data-field="date" readonly name="datedep" id="datedep")
+                                            label(for="datedep") Дата выезда
+                                        .form-group.input-group
+                                            input(type="tel" name="number" id="number")
+                                            label(for="number") Номер
+                                .book-item
+                                    .book-title
+                                        | Ваши контакты
+                                    .book-group
+                                        .form-group.input-group.large-group
+                                            input(type="email" name="mail" id="mail")
+                                            label(for="mail") Электронная почта
+                                        .form-group.input-group.large-group
+                                            input(type="tel" name="phone" id="phone")
+                                            label(for="phone") Номер телефона
+                                .book-item
+                                    .book-title
+                                        | Дополнительные сведения
+                                    .book-nav
+                                        <div class="yes-no-switch">
+                                            <label>Встреча:</label>
+                                            <span class="click-switch" data-no>Нет</span>
+                                            <span class="switch"><input id="more-switch" type="checkbox"><label for="more-switch"></label></span>
+                                            <span class="click-switch" data-yes>Да</span>
+                                        </div>
+                                    .book-group#bookhide
+                                        .form-group.input-group.large-group
+                                            input(type="text" name="hcity" id="hcity")
+                                            label(for="hcity") Из какого города прибываете
+                                        .form-group.input-group.large-group
+                                            input(type="text" name="avia" id="avia")
+                                            label(for="avia") Авиакомпания / рейс, № поезда
+                                        .form-group.input-group
+                                            input( type="text" data-field="date" readonly name="datearr" id="datearr")
+                                            label(for="datearr") Дата прибытия
+                                        .form-group.input-group
+                                            input(type="text" data-field="time" readonly name="timeocc" id="timeocc")
+                                            label(for="timeocc") Время прибытия
+                                .book-form__captcha
+                                    <div class="visualCaptcha" id="simple-captcha">
+                                        <div class="visualCaptcha-possibilities">
+                                                <div class="img"><a href="javascript:void(0);"><img src="images/icons/shirt2.png" alt=""></a></div>
+                                                <div class="img"><a href="javascript:void(0);"><img src="images/icons/headphone2.png" alt=""></a></div>
+                                                <div class="img visualCaptcha-selected"><a href="javascript:void(0);"><img src="images/icons/auto.png" alt=""></a></div>
+                                                <div class="img"><a href="javascript:void(0);"><img src="images/icons/buggy2.png" alt=""></a></div>
+                                                <div class="img"><a href="javascript:void(0);"><img src="images/icons/coffee2.png" alt=""></a></div>
+                                                <div class="img"><a href="javascript:void(0);"><img src="images/icons/airplain2.png" alt=""></a></div>
+                                        </div>
+                                        <div class="visualCaptcha-explanation">Выберите&nbsp;<span class="active">“автомобиль”</span>, чтобы подтвердить, что&nbsp;Вы не&nbsp;робот</div>
+                                    </div>
+                                    .submit
+                                        button(type="submit").btn.btn-small
+                                            span Отправить
+        <div id="dtBox"></div>
+        include pages/footer

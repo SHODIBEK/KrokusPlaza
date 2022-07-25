@@ -1,0 +1,39 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 1999;
+    &-wrap {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 50%;
+        height: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &-img {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        perspective: 1000px;
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: inherit;
+            height: inherit;
+        }
+    }
+}
+
+.st0 {
+    fill: #B19A69;
+}
+
+.st1 {
+    fill: #B49C68;
+}

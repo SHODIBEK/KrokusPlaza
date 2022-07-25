@@ -1,0 +1,337 @@
+extends pug/base
+
+append vars
+	- title = 'Главная страница'
+	- meta.description = 'Описание страницы'
+	- meta.viewport = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
+	- link.icon = './favicon.ico'
+	- meta.formatDetection = 'telephone=no'
+	- meta.themeColor = '#b49c68'
+	- defaultLink = 'javascript:void(0);'
+block content
+	.content
+		include pages/preloader
+		include pages/fixed-header
+		include pages/header
+		.wrapper
+			section.about
+				.about-top
+					.container
+						.about-top__block
+							.about-title
+								.title
+									| О гостинице
+								.subtitle
+									| добро пожаловать в четырёхзвездночную гостиницу
+							.link.bg-dotted
+								a(href="#").btn.btn-small
+									span Подробнее...
+				.about-slider
+					.container
+						.owl-carousel
+							.about-slider__item
+								a(href="images/content/3.jpg" data-fancybox="gallery")
+									.about-slider__img(style="background-image: url('images/content/3.jpg')")
+							.about-slider__item
+								a(href="images/content/3.jpg" data-fancybox="gallery")
+									.about-slider__img(style="background-image: url('images/content/3.jpg')")
+							.about-slider__item
+								a(href="images/content/3.jpg" data-fancybox="gallery")
+									.about-slider__img(style="background-image: url('images/content/4.jpg')")
+							.about-slider__item
+								a(href="images/content/3.jpg" data-fancybox="gallery")
+									.about-slider__img(style="background-image: url('images/content/4.jpg')")
+							.about-slider__item
+								a(href="images/content/3.jpg" data-fancybox="gallery")
+									.about-slider__img(style="background-image: url('images/content/4.jpg')")
+					.about-slider__block
+						.container
+							.about-slider__text
+								p Эта страница является самой первой и главной точкой посетителя сайта, и, поэтому важно заполнить ее наиболее качественной и интересной информацией, ведь именно прочитав ее, посетитель решит – оставаться на сайте или искать необходимую информацию в другом месте. Наполняя этот блок информацией, необходимо отталкиваться от потенциальных покупателей, их желаний и потребностей. Расскажите вкратце об истории и деятельности Вашей компании, укажите ваши плюсы и отличия от конкурентов 
+				.about-options
+					.container
+						.about-options__items
+							.about-options__item
+								.about-options__title
+									span оснащение гостиницы
+								.about-options__list
+									ul
+										li Номерной фонд состоит из 63 номеров различных категорий
+										li Три ресторана и два бара, которые доступны 24 часа
+										li Залы для проведения бизнес и частных мероприятий
+										li Зоны для развлечения, спорта и СПА-процедур
+							.about-options__item
+								.about-options__title
+									span Бесплатный сервис
+								.about-options__list
+									ul
+										li Встреча гостей в аэропорту
+										li Wi-Fi на всей территории гостиницы
+										li Бассейн и зоны спорта
+										li Парковочное место
+				.about-bottom
+					.container
+						.about-bottom__items
+							.about-bottom__item
+								.about-bottom__icon
+									.icon06
+								.about-bottom_text
+									h3 высокий уровень сервиса
+									p Соответсвуем европейской системе классификации
+							.about-bottom__item
+								.about-bottom__icon
+									.icon07
+								.about-bottom_text
+									h3 Удобное расположение
+									p В 5 минутах езды до аэропорта и вокзала
+							.about-bottom__item
+								.about-bottom__icon
+									.icon08
+								.about-bottom_text
+									h3 Поддержка гостей 24 часа
+									p Мы заботимся о наших гостях кругосуточно
+			section.rooms
+				.rooms-top
+					.container
+						.rooms-top__title
+							.title
+								| Номерной фонд
+							.subtitle
+								| Доступно 63 номеров
+				.rooms-items
+					.container
+						.owl-carousel
+							a(href="#").rooms-item
+								.rooms-item__img(style="background-image: url(images/content/5.jpg)")
+								.rooms-info
+									.rooms__title
+										| Стандарт
+									.rooms__desc
+										i 
+											| Уютные номера «Стандарт» площадью от 44 до 54 м² с просторным гардеробом и спальней расположены на мансардном этаже, обеспечивают комфортный отдых в уединенной обстановке.
+									.rooms__option
+										ul.icon-bar
+											li(data-tolltip="Wi-Fi").item0
+												i.icon
+											li(data-tolltip="TV").item1
+												i.icon
+											li(data-tolltip="Минибар").item2
+												i.icon
+											li(data-tolltip="Телефон").item3
+												i.icon
+											li(data-tolltip="Фен").item4
+												i.icon
+											li(data-tolltip="Кровать").item5
+												i.icon
+									.rooms__price
+										| От <span>450 000</span> uzs
+							a(href="#").rooms-item
+								.rooms-item__img(style="background-image: url(images/content/6.jpg)")
+								.rooms-info
+									.rooms__title
+										| Делюск
+									.rooms__desc
+										i 
+											| Просторные и светлые номера «Делюкс» площадью от 51 до 64 м2 с видом на парк, функционально поделены на две части: спальную зону с широкой кроватью и гостиную зону с комфортабельным диваном. 
+									.rooms__option
+										ul.icon-bar
+											li(data-tolltip="Wi-Fi").item0
+												i.icon
+											li(data-tolltip="TV").item1
+												i.icon
+											li(data-tolltip="Минибар").item2
+												i.icon
+											li(data-tolltip="Телефон").item3
+												i.icon
+											li(data-tolltip="Фен").item4
+												i.icon
+											li(data-tolltip="Замок").item6
+												i.icon
+											li(data-tolltip="Кондиционер").item7
+												i.icon
+											li(data-tolltip="Кровать").item5
+												i.icon
+									.rooms__price
+										| От <span>550 000</span> uzs
+							a(href="#").rooms-item
+								.rooms-item__img(style="background-image: url(images/content/7.jpg)")
+								.rooms-info
+									.rooms__title
+										| Студия
+									.rooms__desc
+										i 
+											| Великолепные номера «Студия» площадью от 90 до 120 м² с просторной гостиной и открытой террасой идеально подходят для комфортного пребывания деловых путешественников, а также семейного
+									.rooms__option
+										ul.icon-bar
+											li(data-tolltip="Wi-Fi").item0
+												i.icon
+											li(data-tolltip="TV").item1
+												i.icon
+											li(data-tolltip="Минибар").item2
+												i.icon
+											li(data-tolltip="Телефон").item3
+												i.icon
+											li(data-tolltip="Фен").item4
+												i.icon
+											li(data-tolltip="Замок").item6
+												i.icon
+											li(data-tolltip="Кондиционер").item7
+												i.icon
+											li(data-tolltip="Кровать").item5
+												i.icon
+											li(data-tolltip="Диван").item8
+												i.icon
+											li(data-tolltip="Душ").item9
+												i.icon
+									.rooms__price
+										| От <span>700 000</span> uzs
+							a(href="#").rooms-item
+								.rooms-item__img(style="background-image: url(images/content/5.jpg)")
+								.rooms-info
+									.rooms__title
+										| Студия
+									.rooms__desc
+										i 
+											| Великолепные номера «Студия» площадью от 90 до 120 м² с просторной гостиной и открытой террасой идеально подходят для комфортного пребывания деловых путешественников, а также семейного
+									.rooms__option
+										ul.icon-bar
+											li(data-tolltip="Wi-Fi").item0
+												i.icon
+											li(data-tolltip="TV").item1
+												i.icon
+											li(data-tolltip="Минибар").item2
+												i.icon
+											li(data-tolltip="Телефон").item3
+												i.icon
+											li(data-tolltip="Фен").item4
+												i.icon
+											li(data-tolltip="Замок").item6
+												i.icon
+											li(data-tolltip="Кондиционер").item7
+												i.icon
+											li(data-tolltip="Кровать").item5
+												i.icon
+											li(data-tolltip="Диван").item8
+												i.icon
+											li(data-tolltip="Душ").item9
+												i.icon
+									.rooms__price
+										| От <span>700 000</span> uzs
+					.rooms-link
+						a(href="#").btn.btn-small
+							span Все номера
+			section.offers
+				.offers-block
+					.container
+						.offers-block__wrap
+							.offers-title
+								.title
+									| Спецпредложения
+								.subtitle
+									| В нашей гостинице постоянно действую различные акции для наших гостей
+							.offers-link
+								a(href="#").btn.btn-small
+									span Все спецпредложения
+				.offers-slider
+					.container
+						.offers-slider__items.owl-carousel
+							- for(var i = 0; i < 3; i++)
+								a(href="#").offers-slider__item
+									.offers-slider__title
+										| Раннее бронирование. До -20% от лучшей цены
+									.offers-slider__desc
+										i Поднимите себе настроение уже сегодня! Бронируя номер в нашей гостинице не позднее, чем за 60 дней до даты заезда, Вы получаете эксклюзивные условия до -20% от лучшей цены дня, возможность выбрать лучшие даты и гарантированно любимые номера. Забронируйте свою лучшую поездку в Ташкент заранее!
+									.offers-slider__link
+										| подробнее...
+				.offers-bslider
+					.offers-bslider__title
+						.container
+							.title
+								| Мы рады Вам предложить...
+							.subtitle
+								| Предоставляемый сервис Соответсвуем европейской системе классификации
+					.offers-bslider__items.owl-carousel
+						a(href="#").offers-bslider__item
+							<picture>
+								<source srcset="images/content/8.jpg" media="(min-width: 1024)">
+								<img srcset="images/content/8.jpg"  alt="Конференц-зал">
+							</picture>
+							.offers-bslider__block
+								h5 конференц-зал
+								p Эта страница является самой первой и главной точкой посетителя сайта, и, поэтому важно заполнить ее наиболее качественной и интересной информацией, ведь именно прочитав ее, посетитель решит – оставаться на сайте или искать необходимую информацию в другом месте. Наполняя этот блок информацией, необходимо отталкиваться от потенциальных покупателей, их желаний и потребностей. Расскажите вкратце об 
+								.offers-bslider__link
+									span.btn.btn-small подробнее...
+						a(href="#").offers-bslider__item
+							<picture>
+								<source srcset="images/content/9.jpg" media="(min-width: 1024)">
+								<img srcset="images/content/9.jpg"  alt="Свадьбы и банкеты">
+							</picture>
+							.offers-bslider__block
+								h5 Свадьбы и банкеты
+								p Эта страница является самой первой и главной точкой посетителя сайта, и, поэтому важно заполнить ее наиболее качественной и интересной информацией, ведь именно прочитав ее, посетитель решит – оставаться на сайте или искать необходимую информацию в другом месте. Наполняя этот блок информацией, необходимо отталкиваться от потенциальных покупателей, их желаний и потребностей. Расскажите вкратце об 
+								.offers-bslider__link
+									span.btn.btn-small подробнее...
+						a(href="#").offers-bslider__item
+							<picture>
+								<source srcset="images/content/10.jpg" media="(min-width: 1024)">
+								<img srcset="images/content/10.jpg"  alt="Развлечения и спорт">
+							</picture>
+							.offers-bslider__block
+								h5 Развлечения и спорт
+								p Эта страница является самой первой и главной точкой посетителя сайта, и, поэтому важно заполнить ее наиболее качественной и интересной информацией, ведь именно прочитав ее, посетитель решит – оставаться на сайте или искать необходимую информацию в другом месте. Наполняя этот блок информацией, необходимо отталкиваться от потенциальных покупателей, их желаний и потребностей. Расскажите вкратце об 
+								.offers-bslider__link
+									span.btn.btn-small подробнее...
+						a(href="#").offers-bslider__item
+							<picture>
+								<source srcset="images/content/11.jpg" media="(min-width: 1024)">
+								<img srcset="images/content/11.jpg"  alt="Спа-процедуры">
+							</picture>
+							.offers-bslider__block
+								h5 Спа-процедуры
+								p Эта страница является самой первой и главной точкой посетителя сайта, и, поэтому важно заполнить ее наиболее качественной и интересной информацией, ведь именно прочитав ее, посетитель решит – оставаться на сайте или искать необходимую информацию в другом месте. Наполняя этот блок информацией, необходимо отталкиваться от потенциальных покупателей, их желаний и потребностей. Расскажите вкратце об 
+								.offers-bslider__link
+									span.btn.btn-small подробнее...
+			section.reviews
+				.reviews-top
+					.container
+						.reviews-top__wrap
+							.reviews-top__title
+								.title
+									| Отзывы
+								.subtitle
+									| гости на всю жизнь
+							.reviews-link.bg-dotted
+								a(href="#").btn.btn-small
+									span Все отзывы
+				.reviews-slider
+					.container
+						.reviews-slider__items.owl-carousel
+							.reviews-slider__item
+								.reviews-slider__top
+									.reviews-slider__img(style="background-image: url('images/content/12.jpg')")
+									.reviews-slider__name
+										span Алексей лазарев
+								.reviews-slider__bottom
+									i Люди склонны читать отзывы, даже если они не читают основной текст. Разумеется, если эти отзывы им интересны. Когда Вы отзываетесь лестно о чьей-то работе,
+							.reviews-slider__item
+								.reviews-slider__top
+									.reviews-slider__img(style="background-image: url('images/content/12.jpg')")
+									.reviews-slider__name
+										span Алексей лазарев
+								.reviews-slider__bottom
+									i Люди склонны читать отзывы, даже если они не читают основной текст. Разумеется, если эти отзывы им интересны. Когда Вы отзываетесь лестно о чьей-то работе, товаре, явлении и т.д., Вы располагаете
+							.reviews-slider__item
+								.reviews-slider__top
+									.reviews-slider__img(style="background-image: url('images/content/12.jpg')")
+									.reviews-slider__name
+										span Алексей лазарев
+								.reviews-slider__bottom
+									i Люди склонны читать отзывы, даже если они не читают основной текст. Разумеется, если эти отзывы им интересны. Когда Вы 
+							.reviews-slider__item
+								.reviews-slider__top
+									.reviews-slider__img(style="background-image: url('images/content/12.jpg')")
+									.reviews-slider__name
+										span Алексей лазарев
+								.reviews-slider__bottom
+									i Люди склонны читать отзывы, даже если они не читают основной текст. Разумеется, если эти отзывы им интересны. Когда Вы отзываетесь лестно о чьей-то работе,
+		include pages/footer
