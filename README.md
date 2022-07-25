@@ -27,4 +27,3 @@ To deploy this project run
 ## 🔗**LINK TO PAGE**
 
 ***https://krokusplaza.uz/***
-
