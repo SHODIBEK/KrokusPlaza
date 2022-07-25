@@ -21,7 +21,7 @@ To deploy this project run
 
 ## 🖼️ **SCREENSHOTS**
 
-![App Screenshot](https://i.ibb.co/DLT1BhL/screencapture-krokusplaza-uz-2020-08-27-22-23-22.png)
+![App Screenshot]([https://i.ibb.co/DLT1BhL/screencapture-krokusplaza-uz-2020-08-27-22-23-22.png](https://i.ibb.co/DLT1BhL/screencapture-krokusplaza-uz-2020-08-27-22-23-22.png))
 
 
 ## 🔗**LINK TO PAGE**
